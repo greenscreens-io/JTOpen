@@ -14,6 +14,11 @@ package com.ibm.as400.socket;
 
 import java.net.SocketOption;
 
+/*
+ * Based on original source
+ * https://github.com/jnr/jnr-unixsocket/blob/master/src/main/java/jnr/unixsocket/UnixSocketOptions.java
+ */
+
 /**
  * Defines common socket options for AF_UNIX sockets.
  * 

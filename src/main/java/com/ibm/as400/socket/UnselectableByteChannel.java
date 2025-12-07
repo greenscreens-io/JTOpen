@@ -20,6 +20,11 @@ import java.nio.channels.SocketChannel;
 import java.nio.channels.WritableByteChannel;
 import java.util.Objects;
 
+/*
+ * Based on original source
+ * https://github.com/jnr/jnr-unixsocket/blob/master/src/main/java/jnr/unixsocket/UnixSocket.java
+ */
+
 /**
  * A byte channel that doesn't implement {@link SelectableChannel}. Though
  * that type isn't in the public API, if the channel passed in implements
