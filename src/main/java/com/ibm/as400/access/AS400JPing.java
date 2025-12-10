@@ -16,7 +16,6 @@ package com.ibm.as400.access;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.beans.PropertyVetoException;
 import java.io.IOException;
 import java.net.Socket;
 
@@ -134,7 +133,7 @@ public class AS400JPing
      * @param sock5port
      * @throws PropertyVetoException
      */
-    public void setSock5Server(String sock5Server, int sock5port) throws PropertyVetoException {
+    public void setSock5Server(String sock5Server, int sock5port) {
     	setSock5Server(String.format("%s:%s", sock5Server, sock5port));
     }
 
@@ -146,7 +145,7 @@ public class AS400JPing
      * @param sock5Server
      * @throws PropertyVetoException
      */
-    public void setSock5Server(String sock5Server) throws PropertyVetoException {
+    public void setSock5Server(String sock5Server) {
         if (Trace.traceOn_) Trace.log(Trace.DIAGNOSTIC, "Setting sock5 server:", sock5Server);
         socketProperties_.setSock5Server(sock5Server);
     }    
